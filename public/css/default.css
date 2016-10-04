@@ -1,0 +1,277 @@
+html,body {
+	height: 100%; width: 100%;
+	background-color: #ff4d4d;
+}
+
+a {
+	color:#e6e6e6;
+}
+
+a:hover {
+	color:#333333;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+/************TOP BANNER*************/
+.topBanner {
+	position:relative;
+	height:15%;
+	color:white;
+	z-index:100;
+}
+
+.topBanner h1 {
+	font-size:4em; 
+	margin:0px 0px 0px 0px; 
+	padding:0;
+}
+
+.topBanner h2 {
+	font-size:2.5em; 
+	margin:0px 0px 0px 0px !important;
+}
+
+.topBanner div{
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+
+/* Banner Contact */
+.banner-contact{
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+.banner-contact ul {
+	margin-bottom:0 !important;
+}
+
+.banner-contact ul li{
+	font-size:1.2em;
+	text-decoration:none;
+	list-style:none;	
+}
+
+.banner-contact-row{
+	width:100%;
+	padding-left: 15px !important;
+	margin: 0 !important;
+	background-color:gray;
+}
+
+.banner-contact-row ul {
+	padding: 0 !important;
+}
+
+.banner-contact-row ul li{
+	float:left;
+	padding-right:15px;
+}
+
+
+
+/********** MAIN CONTAINER ************/
+.container-fluid {height: 100%;}
+
+.content-container {
+	height:85%;
+}
+
+/* NAVIGATION */
+.navigation-wrapper {
+	position:relative;
+	top:0;
+	z-index:100;
+	left:0;
+	height:100%;
+	padding:0;
+}
+.left-nav {
+	height:100%;
+	padding:0; margin:0;
+}
+
+.left-nav ul {
+   width:100%;	
+padding:inherit; margin: auto 0;
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+.left-nav ul li {
+	list-style:none;text-decoration:none;
+	height:inherit; width:inherit;
+}
+
+.left-nav ul li a {
+	display:block;
+	height:100%;
+	padding:20px 0 20px 15px;
+	font-size: 1.2em;
+	/*border:1px solid black;*/
+}
+
+.left-nav ul li a:link {color:white;}
+.left-nav ul li a:visited {color:white;}
+
+
+/* CONTENT */
+.content-wrapper{
+	position:relative;
+	top:0;
+	z-index:100;
+	float:right;
+	height:100%;
+	overflow:auto;
+	padding:0;
+	background-color:rgba(255, 77, 77, 0.5);
+}
+
+.content{
+	width:100%;
+	height:inherit;
+}
+
+.content-block{
+	color:white;
+	width:100%;height:100%;
+	padding:0px 10px;
+	position:relative; top:50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.content-block h2, .content-block h3{
+	margin-top:0;
+	padding:20px 0;
+	color:white;
+	border-bottom:1px solid white;
+}
+
+.content-block p{
+
+}
+
+.statement p{
+	color:white;
+	font-size:1.5em;
+	text-indent:0px;
+	text-align:center;
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);	
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.programming, .design, .administration, .contact{
+	color:white;
+	margin-bottom:10%;
+}
+
+.programming div, .design div, .administration div, .contact div {
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.autorotor {
+	background-color:gray;	
+}
+
+.code-snippet {
+	height:80%;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+		
+.skills-list ul li, .contact-list ul li{
+	font-size:1.7em;
+	list-style-type:none;
+}
+
+/* PAPER */
+#canvas {
+	width:100%; height:100%;
+   position:absolute;
+   top:0;	
+	left:0;		
+	z-index:1;
+}
+
+
+/* UTILITY */
+.clear {clear:both;}
+.anchor h1, .anchor h2 {
+	color:white !important;
+}
+
+.anchor:hover {
+	text-decoration:none;
+}
+
+/********** Responsive Fixes ***********/
+@media screen and (max-width: 992px) {
+	.banner-name h1{
+		font-size:2.5em;
+	}
+	.banner-type h2{
+		font-size:1.6em;
+	}
+	.navigation-wrapper{
+	
+	}
+	.content-wrapper{
+	
+	}
+	.content-block{
+	}
+	.left-nav ul {
+		position:static;
+	}
+	.left-nav ul li a {
+		float:left;
+	}
+	.left-nav-contact {
+		display:none;
+	}
+	.skills-list ul li{
+		text-align:center;	
+	}
+	.skills-list ul, .contact-list ul{
+		padding:0;
+	}
+}
+
+@media only screen and (max-width: 667px) and (orientation: portrait){
+	.top-banner{
+		height:10%;
+	}
+	.navigation-wrapper{
+		height:10%;
+	}
+	.content-container{
+		height:75%
+	}
+}
