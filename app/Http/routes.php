@@ -15,6 +15,8 @@ Route::get('/','HomeController@showHome');
 Route::get('/programming','HomeController@showProgramming');
 Route::get('/design','HomeController@showDesign');
 Route::get('/administration','HomeController@showAdministration');
+Route::get('/notebook','NotebookController@index');
+Route::get('/notebook/{note}','NotebookController@show');
 
 /*
 |--------------------------------------------------------------------------
