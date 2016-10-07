@@ -20,6 +20,11 @@ p {
 	line-height: 1.5em;
 }
 
+pre {
+	background-color:none;
+	border:none;
+}
+
 /************TOP BANNER*************/
 .topBanner {
 	position:relative;
@@ -114,6 +119,7 @@ padding:inherit; margin: auto 0;
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
+	border-right:1px solid white;
 }
 
 .left-nav ul li {
@@ -200,16 +206,16 @@ padding:inherit; margin: auto 0;
 	background-color:gray;	
 }
 
-.code-snippet {
+/*.code-snippet {
 	height:80%;
 	overflow:scroll;
 	overflow-x:hidden;
-}
+}*/
 		
-.skills-list ul li, .contact-list ul li{
+/*.skills-list ul li, .contact-list ul li{
 	font-size:1.7em;
 	list-style-type:none;
-}
+}*/
 
 /* PAPER */
 #canvas {

@@ -13,14 +13,12 @@
 	@section('content')
 	<div class="content-block">
 	<h2>Notebook</h2>
+	<p><em>This notebook contains both my daily notes about whatever, and also my references for what I work on and learn. Some of this might be useful, some useless, I'll try to make it useful to others when I can.</em></p><hr>
 		<div class="col-md-6">
 			<h3>Daily Notes</h3>
 			<ul>
 				<li><a href="/notebook/2016-10-04">2016-10-04</a></li>
-			</ul>
-			<h3>Music</h3>
-			<ul>
-
+				<li><a href="/notebook/2016-10-07">2016-10-07</a></li>
 			</ul>
 		</div>
 		<div class="col-md-6">
@@ -28,11 +26,9 @@
 			<ul>
 				<li><a href="/notebook/openframeworks-general">2016-10-04 General oF</a></li>
 				<li><a href="/notebook/openframeworks-renaming">2016-10-04 Renaming Projects</a></li>
+				<li><a href="/notebook/openframeworks-shadersetup">2016-10-07 Shader Setup</a></li>
+				<li><a href="/notebook/openframeworks-framebyframe">2016-10-07 ofVideoGrabber frame-by-frame rendering</a></li>				
 			</ul>
-			<h3>Music</h3>
-			<ul>
-
-			</ul>
-		</div>		
+		</div>
 	</div>
 	@stop

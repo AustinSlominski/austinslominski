@@ -3,7 +3,7 @@
 </div>
 
 <div class="col-md-3 hidden-sm banner-type">
-	<h2>Web Developer</h2>
+	<h2></h2>
 </div>
 
 <div class="col-md-4 hidden-sm hidden-xs banner-contact pull-right">

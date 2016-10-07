@@ -36,25 +36,29 @@
 			</p>
 		</div>
 		<div class="col-md-6 hidden-sm hidden-xs skills-list">
-			<ul>
-				<li><strong>PHP</strong></li>
-				<li><strong>HTML</strong></li>
-				<li><strong>CSS</strong></li>
-				<li><strong>Javascript</strong></li>
-				<li><strong>MySQL</strong></li>
-				<li><strong>MSSQL</strong></li>
-			</ul>
+			<pre>
+			<code class="html">
+				<ul>
+					<li><strong>PHP</strong></li>
+					<li><strong>HTML</strong></li>
+					<li><strong>CSS</strong></li>
+					<li><strong>Javascript</strong></li>
+					<li><strong>MySQL</strong></li>
+					<li><strong>MSSQL</strong></li>
+				</ul>
+			</code>
+			</pre>
 		</div>
 	</div>
 	<div class="col-sm-12 hidden-lg hidden-md content-block contact-list text-center">
-			<ul>
-				<li><strong>PHP</strong></li>
-				<li><strong>HTML</strong></li>
-				<li><strong>CSS</strong></li>
-				<li><strong>Javascript</strong></li>
-				<li><strong>MySQL</strong></li>
-				<li><strong>MSSQL</strong></li>
-			</ul>
+		<ul>
+			<li><strong>PHP</strong></li>
+			<li><strong>HTML</strong></li>
+			<li><strong>CSS</strong></li>
+			<li><strong>Javascript</strong></li>
+			<li><strong>MySQL</strong></li>
+			<li><strong>MSSQL</strong></li>
+		</ul>
 	</div>
 	
 	<div class="portfolio-block">
