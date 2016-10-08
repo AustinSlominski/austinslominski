@@ -281,3 +281,14 @@ padding:inherit; margin: auto 0;
 		height:75%
 	}
 }
+
+.banner-contact {
+	margin-right: 50px;
+}
+
+.contact-logo {
+	text-align:right;
+	height:40px;
+	width:auto;
+	padding-right:15px;
+}
