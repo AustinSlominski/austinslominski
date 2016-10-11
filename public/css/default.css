@@ -25,6 +25,8 @@ pre {
 	border:none;
 }
 
+
+
 /************TOP BANNER*************/
 .topBanner {
 	position:relative;
@@ -51,7 +53,6 @@ pre {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 }
-
 
 /* Banner Contact */
 .banner-contact{
@@ -164,6 +165,10 @@ padding:inherit; margin: auto 0;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+}
+
+.notebook-content {
+	margin-bottom:50px;
 }
 
 .content-block h2, .content-block h3{
@@ -291,4 +296,10 @@ padding:inherit; margin: auto 0;
 	height:40px;
 	width:auto;
 	padding-right:15px;
+}
+
+.notebook-img {
+	max-width:100%;
+	height:auto;
+	margin:15px 0px;
 }
