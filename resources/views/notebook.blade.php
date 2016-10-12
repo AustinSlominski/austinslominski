@@ -23,6 +23,7 @@
 				<li><a href="/notebook/2016-10-04">2016-10-04</a></li>
 				<li><a href="/notebook/2016-10-07">2016-10-07</a></li>
 				<li><a href="/notebook/2016-10-10">2016-10-10</a></li>
+				<li><a href="/notebook/2016-10-11">2016-10-11</a></li>
 			</ul>
 		</div>
 		<div class="col-md-6">
@@ -39,7 +40,7 @@
 		<div class="col-md-6">
 			<h3>Max/MSP</h3>
 			<ul>
-				<li><a href="/notebook/max-groove">[groove~]</a></li>
+				<li><a href="/notebook/max-groove">2016-10-11 [groove~]</a></li>				
 			</ul>
 		</div>
 		<div class="col-md-6">

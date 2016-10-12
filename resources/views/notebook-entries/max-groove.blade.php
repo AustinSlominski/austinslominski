@@ -12,7 +12,7 @@
 	
 	@section('content')
 	<div class="content-block">
-		<div class="col-md-12 notebook-content">
+		<div class="col-md-8 notebook-content">
 			<h2>[groove~]</h2>
 			<p><em><b>"The groove~ object is a variable-rate, looping, sample-playback object which references the audio information stored in a buffer~ object with the same name."</b></em></p>
 			<p>The groove object is the foundation of most audio looping mechanisms in Max.</p> 
@@ -29,9 +29,9 @@
 			<img class="notebook-img" src="{{ asset('img/note-img/groove-2.png') }}">
 			<h3>Smoothing a Loop</h3>
 			<p>You might notice a clicking sound when your loop is running. This is because the end of your loop immediately jumps to the beginning, causing a sudden change in volume. There are a few different ways we can approach smoothing this out.</p>
-			<p>
-				-- note to self: finish this when you figure out the issues with the variable rate looper --
-			</p>
+			<p>A typical approach might be using something like a line~ object. Another method I just <a href="https://cycling74.com/forums/topic/groove-loop-with-no-clicks/#.V_1HeKOZN0w">recently came across</a> is using the trapezoid~ object to smooth the beginning and end of the sample. The execution is simple:</p>
+			<img class="notebook-img" src="{{ asset('img/note-img/groove-3.png') }}">			
+			<p>The float labeled "Smoothness" sets the speed at which it ramps up and ramps down. You can of course set these individually if you have a sample that needs precise tweaking.</p>
 		</div>
 	</div>
 	@stop
