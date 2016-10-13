@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Http\Requests;
 
 class NotebookController extends Controller
@@ -49,7 +49,8 @@ class NotebookController extends Controller
     public function show($note)
     {
         $data['title'] = $note;
-        return view('notebook-entries.'.$note,$data);
+        $data['markdown'] = Markdown::convertToHtml(file_get_contents('../resources/views/notebook-entries/'.$note.'.md'));
+        return view('notebook-entries.notebook-entry',$data);
     }
 
     /**

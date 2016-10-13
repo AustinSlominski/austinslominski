@@ -24,6 +24,7 @@
 				<li><a href="/notebook/2016-10-07">2016-10-07</a></li>
 				<li><a href="/notebook/2016-10-10">2016-10-10</a></li>
 				<li><a href="/notebook/2016-10-11">2016-10-11</a></li>
+				<li><a href="/notebook/2016-10-12">2016-10-12</a></li>
 			</ul>
 		</div>
 		<div class="col-md-6">
