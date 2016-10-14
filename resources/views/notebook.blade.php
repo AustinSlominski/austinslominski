@@ -45,9 +45,9 @@
 			</ul>
 		</div>
 		<div class="col-md-6">
-			<h3>Jitter</h3>
+			<h3>GLSL</h3>
 			<ul>
-	
+				<li><a href="/notebook/glsl-heatdistortion">2016-10-13 Creating a heat distortion effect</a></li>	
 			</ul>
 		</div>
 
