@@ -25,6 +25,7 @@
 				<li><a href="/notebook/2016-10-10">2016-10-10</a></li>
 				<li><a href="/notebook/2016-10-11">2016-10-11</a></li>
 				<li><a href="/notebook/2016-10-12">2016-10-12</a></li>
+				<li><a href="/notebook/2016-10-19">2016-10-19</a></li>
 			</ul>
 		</div>
 		<div class="col-md-6">
@@ -33,7 +34,8 @@
 				<li><a href="/notebook/openframeworks-general">2016-10-04 General oF</a></li>
 				<li><a href="/notebook/openframeworks-renaming">2016-10-04 Renaming Projects</a></li>
 				<li><a href="/notebook/openframeworks-shadersetup">2016-10-07 Shader Setup</a></li>
-				<li><a href="/notebook/openframeworks-framebyframe">2016-10-07 ofVideoGrabber frame-by-frame rendering</a></li>				
+				<li><a href="/notebook/openframeworks-framebyframe">2016-10-07 ofVideoGrabber frame-by-frame rendering</a></li>		
+				<li><a href="/notebook/openframeworks-drawsimplesine">2016-10-19 Drawing a simple sine wave</a></li>						
 			</ul>
 		</div>
 
