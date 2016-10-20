@@ -27,6 +27,21 @@ pre {
 
 
 
+.content-block div {
+	margin-right:-10px;
+}
+
+
+.content-block div ul {
+	padding-left:0 !important;
+}
+
+.content-block div ul li {
+	list-style:none;
+}
+
+
+
 /************TOP BANNER*************/
 .topBanner {
 	position:relative;
