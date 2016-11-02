@@ -1,4 +1,4 @@
-$background_color = #ff4d4d;
+$background_color: #ff4d4d;
 
 html,body {
 	height: 100%; width: 100%;
@@ -15,12 +15,27 @@ p {
 }
 
 pre {
-	background-color:none;
+	background-color:none !important;
 	border:none;
 }
 
 @include links(#e6e6e6,#333333);
 
+.statement {
+	text-align:center;
+	div p {
+		font-size:1.6em;	
+	}
+}
+
+/************** PAPER **************/
+#canvas {
+	width:100%; height:100%;
+	position:absolute;
+	top:0;	
+	left:0;		
+	z-index:1;
+}
 
 /********** MAIN CONTAINER ************/
 .container-fluid {
@@ -28,12 +43,60 @@ pre {
 }
 
 .content-container {
+	@extend .row;
 	height:85%;
+
+	.content-wrapper {
+		@extend .col-md-10, .col-sm-10;
+		position:relative;
+		top:0;
+		z-index:100;
+		float:right;
+		height:100%;
+		overflow:auto;
+		padding:0;
+		background-color:rgba(255, 77, 77, 0.5);
+
+		.content-block{
+			color:white;
+			width:100%;height:100%;
+			padding:0px 10px;
+			div {
+				position:relative; top:50%;
+				transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);	
+			}
+			a {
+				color:#FAA;
+			}
+		}
+	}
 }
 
+/************ NOTEBOOK ************/
+
+.notebook-block {
+	color:white;
+	padding:0px 20px;
+	div {
+		@extend .row, .col-md-12;
+		div {
+			@extend .col-md-6;
+		}
+	}
+	margin-bottom:50px;
+}
+
+.notebook-img {
+	max-width:100%;
+	height:auto;
+	margin:15px 0px;
+}
 
 /************TOP BANNER*************/
 .topBanner {
+	@extend .row;
 	position:relative;
 	height:15%;
 	color:white;
@@ -57,19 +120,41 @@ pre {
 		-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
 	}
-}
 
-/************CONTACT BANNER*************/
-.banner-contact{
-	position:relative;
-	top:50%;
-	transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
+	.banner-name{
+		@extend .col-md-5, .col-sm-6;
+		a {
+			text-decoration:none;
+			color:white;
+			&:hover{
+				text-decoration:none;
+				color:gray;
+			}
+		}
+	}
+
+	.banner-contact{
+		@extend .col-md-4, .hidden-sm, .hidden-xs, .pull-right;
+		position:relative;
+		top:50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		a{
+			img{
+				@extend .pull-right;
+				text-align:right;
+				height:40px;
+				width:auto;
+				padding-right:15px;
+			}
+		}
+	}
 }
 
 /************NAVIGATION*************/
 .navigation-wrapper {
+	@extend .col-md-2, .col-sm-2;
 	position:relative;
 	top:0;
 	z-index:100;
@@ -78,6 +163,7 @@ pre {
 	padding:0;
 
 	.left-nav {
+		@extend .hidden-xs, .hidden-sm;
 		height:100%;
 		padding:0; margin:0;
 
@@ -103,4 +189,12 @@ pre {
 			}		
 		}
 	}
+}
+
+
+.contact-list{
+	ul{
+		list-style:none;
+	}
+	font-size:1.5em;
 }

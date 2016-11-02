@@ -11,9 +11,5 @@
 	@stop
 	
 	@section('content')
-	<div class="content-block">
-		<div class="col-md-8 notebook-content">
 		@yield('markdown') 
-		</div>
-	</div>
 	@stop

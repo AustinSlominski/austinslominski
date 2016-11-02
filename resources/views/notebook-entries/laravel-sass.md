@@ -91,5 +91,7 @@ And a sample from profile.scss
 }
 ```
 
-Finally, there are a few commands you need to call from the terminal, using either `gulp` to run tasks, or `gulp watch` to detect changes and run tasks automatically.
+Finally, there are a few commands you need to call from the terminal, using either `gulp` to run tasks, or `gulp watch` to detect changes and run tasks automatically. 
+
+If you are extending your classes with bootstrap classes, make sure the first line of app.scss is uncommented (it is commented out by default). @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
