@@ -1,4 +1,15 @@
 @extends('layouts.master')
+	@section('customScript')
+		<script type="text/javascript" src="{{ asset('js/paperjs/dist/paper-full.js') }}"></script>
+		<script type="text/paperscript" src="{{asset('js/paperjs/autorotor.js')}}" canvas="canvas"></script>
+	@stop
+
+	@section('title') @parent {{ $title }} @stop
+	
+	@section('canvas')	
+		<canvas id="canvas" resize="true"></canvas>
+	@stop
+	
 	@section('content')
 <div class="notebook-block">
 	<div>
@@ -15,6 +26,7 @@
 				<li><a href="/notebook/2016-10-11"><b>[2016-10-11]</b></a></li>
 				<li><a href="/notebook/2016-10-12"><b>[2016-10-12]</b></a></li>
 				<li><a href="/notebook/2016-10-19"><b>[2016-10-19]</b></a></li>
+				<li><a href="/notebook/2016-11-02"><b>[2016-11-02]</b></a></li>
 			</ul>
 		</div>
 		<div>

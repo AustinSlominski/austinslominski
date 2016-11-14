@@ -5802,6 +5802,13 @@ a {
   color: white;
   padding: 0px 20px;
   margin-bottom: 50px; }
+  .notebook-block div image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0px; }
+  .notebook-block div div ul {
+    list-style: none;
+    padding-left: 0px !important; }
 
 .notebook-img {
   max-width: 100%;
