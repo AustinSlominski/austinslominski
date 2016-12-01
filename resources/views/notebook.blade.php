@@ -18,7 +18,7 @@
 	</div>
 	<div>
 		<div>
-			<h3>Daily Notes</h3>
+			<h3>Misc/Daily Notes</h3>
 			<ul>
 				<li><a href="/notebook/2016-10-04"><b>[2016-10-04]</b></a></li>
 				<li><a href="/notebook/2016-10-07"><b>[2016-10-07]</b></a></li>
@@ -67,7 +67,8 @@
 		<div>
 			<h3>Web</h3>
 			<ul>
-				<li><a href="/notebook/laravel-sass">[2016-10-19]<b> Installing and configuring SASS for Laravel</b></a></li>	
+				<li><a href="/notebook/laravel-installation">[2016-11-21]<b> Installing Laravel</b></a></li>	
+				<li><a href="/notebook/laravel-sass">[2016-10-19]<b> Installing and configuring SASS for Laravel</b></a></li>				
 			</ul>
 		</div>
 	</div>		

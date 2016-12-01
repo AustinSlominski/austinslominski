@@ -1533,7 +1533,7 @@ pre {
   .row:after, .content-container:after, .notebook-block div:after, .topBanner:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .navigation-wrapper, .col-md-2, .navigation-wrapper, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .topBanner .banner-contact, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .topBanner .banner-name, .col-lg-5, .col-xs-6, .col-sm-6, .topBanner .banner-name, .col-md-6, .notebook-block div div, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .content-container .content-wrapper, .col-md-10, .content-container .content-wrapper, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .notebook-block div, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .navigation-wrapper, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .topBanner .banner-contact, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .topBanner .banner-name, .col-lg-5, .col-xs-6, .col-sm-6, .topBanner .banner-name, .col-md-6, .notebook-block div div, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .content-container .content-wrapper, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .notebook-block div, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1696,11 +1696,11 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .navigation-wrapper, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .topBanner .banner-name, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .content-container .content-wrapper, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .topBanner .banner-name, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
     width: 8.3333333333%; }
-  .col-sm-2, .navigation-wrapper {
+  .col-sm-2 {
     width: 16.6666666667%; }
   .col-sm-3 {
     width: 25%; }
@@ -1716,7 +1716,7 @@ pre {
     width: 66.6666666667%; }
   .col-sm-9 {
     width: 75%; }
-  .col-sm-10, .content-container .content-wrapper {
+  .col-sm-10 {
     width: 83.3333333333%; }
   .col-sm-11 {
     width: 91.6666666667%; }
@@ -5682,11 +5682,11 @@ button.close {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, .topBanner .banner-contact, .navigation-wrapper .left-nav {
+  .hidden-xs {
     display: none !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .hidden-sm, .topBanner .banner-contact, .navigation-wrapper .left-nav {
+  .hidden-sm {
     display: none !important; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -5733,6 +5733,35 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .banner-name h1 {
+    text-align: center; }
+  .topBanner {
+    padding-top: 15px; }
+  .navigation-wrapper {
+    height: 50px !important; }
+    .navigation-wrapper .navigation {
+      height: auto !important; }
+      .navigation-wrapper .navigation ul {
+        text-align: center;
+        height: auto;
+        padding-top: 30px !important;
+        /* For centering vertically, need a fix */
+        border: none !important; }
+        .navigation-wrapper .navigation ul li {
+          width: auto !important;
+          padding-top: 15px;
+          display: inline-block !important; }
+          .navigation-wrapper .navigation ul li a {
+            padding: 0px 15px 0px 15px !important; }
+  .banner-contact {
+    display: none; }
+  .content-container {
+    height: 77% !important;
+    /*height:auto !important;*/ } }
+
+/*-----------------------------------*/
 html, body {
   height: 100%;
   width: 100%;
@@ -5773,7 +5802,9 @@ a {
   height: 100%; }
 
 .content-container {
-  height: 85%; }
+  height: 85%;
+  /*float:right;	*/
+  /*width:50%;*/ }
   .content-container .content-wrapper {
     position: relative;
     top: 0;
@@ -5834,12 +5865,14 @@ a {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%); }
-  .topBanner .banner-name a {
-    text-decoration: none;
-    color: white; }
-    .topBanner .banner-name a:hover {
+  .topBanner .banner-name {
+    width: auto !important; }
+    .topBanner .banner-name a {
       text-decoration: none;
-      color: gray; }
+      color: white; }
+      .topBanner .banner-name a:hover {
+        text-decoration: none;
+        color: gray; }
   .topBanner .banner-contact {
     position: relative;
     top: 50%;
@@ -5859,12 +5892,13 @@ a {
   z-index: 100;
   left: 0;
   height: 100%;
-  padding: 0; }
-  .navigation-wrapper .left-nav {
+  padding: 0px !important;
+  /*float:left;*/ }
+  .navigation-wrapper .navigation {
     height: 100%;
     padding: 0;
     margin: 0; }
-    .navigation-wrapper .left-nav ul {
+    .navigation-wrapper .navigation ul {
       width: 100%;
       padding: inherit;
       margin: auto 0;
@@ -5874,21 +5908,40 @@ a {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       border-right: 1px solid white; }
-      .navigation-wrapper .left-nav ul li {
+      .navigation-wrapper .navigation ul li {
         list-style: none;
         text-decoration: none;
         height: inherit;
         width: inherit; }
-        .navigation-wrapper .left-nav ul li a {
+        .navigation-wrapper .navigation ul li a {
+          color: white;
           display: block;
           height: 100%;
           padding: 20px 0 20px 15px;
-          font-size: 1.2em;
-          /*border:1px solid black;*/ }
+          font-size: 1.2em; }
 
 .contact-list {
   font-size: 1.5em; }
   .contact-list ul {
     list-style: none; }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /*@import "tablet";*/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /*@import "desktop";*/ }
+
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 
 /*# sourceMappingURL=app.css.map */

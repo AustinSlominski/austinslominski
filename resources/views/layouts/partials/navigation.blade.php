@@ -1,4 +1,4 @@
-<div class="left-nav">
+<div class="navigation">
 	<ul>
 		<li><a id="programming-link" href="/#programming">Programming</a></li>
 		<li><a id="portfolio-link" href="/#portfolio">Portfolio</a></li>

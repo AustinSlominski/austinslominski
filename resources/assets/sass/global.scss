@@ -1,211 +1,57 @@
 $background_color: #ff4d4d;
 
-html,body {
-	height: 100%; width: 100%;
-	background-color: $background_color;
+@import "phone";
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
 }
 
-.active {
-	text-decoration: underline;
-}	
-
-p {
-	font-size: 18px;
-	line-height: 1.5em;
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    
 }
 
-pre {
-	background-color:none !important;
-	border:none;
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    /*@import "tablet";*/
 }
 
-@include links(#e6e6e6,#333333);
-
-.statement {
-	text-align:center;
-	div p {
-		font-size:1.6em;	
-	}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    /*@import "desktop";*/
 }
 
-/************** PAPER **************/
-#canvas {
-	width:100%; height:100%;
-	position:absolute;
-	top:0;	
-	left:0;		
-	z-index:1;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
 }
 
-/********** MAIN CONTAINER ************/
-.container-fluid {
-	height: 100%;
-}
+ /*==========  Non-Mobile First Method  ==========*/
 
-.content-container {
-	@extend .row;
-	height:85%;
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
 
-	.content-wrapper {
-		@extend .col-md-10, .col-sm-10;
-		position:relative;
-		top:0;
-		z-index:100;
-		float:right;
-		height:100%;
-		overflow:auto;
-		padding:0;
-		background-color:rgba(255, 77, 77, 0.5);
+    }
 
-		.content-block{
-			color:white;
-			width:100%;height:100%;
-			padding:0px 10px;
-			div {
-				position:relative; top:50%;
-				transform: translateY(-50%);
-				-ms-transform: translateY(-50%);
-				-webkit-transform: translateY(-50%);	
-			}
-			a {
-				color:#FAA;
-			}
-		}
-	}
-}
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
 
-/************ NOTEBOOK ************/
+    }
 
-.notebook-block {
-	color:white;
-	padding:0px 20px;
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
 
-	div {
-		image {
-			max-width:100%;
-			height:auto;
-			margin:15px 0px;
-		}
-		@extend .row, .col-md-12;
-		div {
-			@extend .col-md-6;
+    }
 
-			ul {
-				list-style:none;
-				padding-left:0px !important;
-			}
-		}
-	}
-	margin-bottom:50px; 
-}
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
 
-.notebook-img {
-	max-width:100%;
-	height:auto;
-	margin:15px 0px;
-}
+    }
 
-/************TOP BANNER*************/
-.topBanner {
-	@extend .row;
-	position:relative;
-	height:15%;
-	color:white;
-	z-index:100;
-	
-	h1 {
-		font-size:4em; 
-		margin:0px 0px 0px 0px; 
-		padding:0;
-	}
-
-	h2 {
-		font-size:2.5em; 
-		margin:0px 0px 0px 0px !important;
-	}
-
-	div{
-		position:relative;
-		top:50%;
-		transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-	}
-
-	.banner-name{
-		@extend .col-md-5, .col-sm-6;
-		a {
-			text-decoration:none;
-			color:white;
-			&:hover{
-				text-decoration:none;
-				color:gray;
-			}
-		}
-	}
-
-	.banner-contact{
-		@extend .col-md-4, .hidden-sm, .hidden-xs, .pull-right;
-		position:relative;
-		top:50%;
-		transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-		a{
-			img{
-				@extend .pull-right;
-				text-align:right;
-				height:40px;
-				width:auto;
-				padding-right:15px;
-			}
-		}
-	}
-}
-
-/************NAVIGATION*************/
-.navigation-wrapper {
-	@extend .col-md-2, .col-sm-2;
-	position:relative;
-	top:0;
-	z-index:100;
-	left:0;
-	height:100%;
-	padding:0;
-
-	.left-nav {
-		@extend .hidden-xs, .hidden-sm;
-		height:100%;
-		padding:0; margin:0;
-
-		ul {
-		   	width:100%;	
-			padding:inherit; margin: auto 0;
-			position:relative;
-			top:50%;
-			transform: translateY(-50%);
-			-webkit-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-			border-right:1px solid white;
-			li {
-				list-style:none;text-decoration:none;
-				height:inherit; width:inherit;
-				a {
-					display:block;
-					height:100%;
-					padding:20px 0 20px 15px;
-					font-size: 1.2em;
-					/*border:1px solid black;*/	
-				}
-			}		
-		}
-	}
-}
-
-
-.contact-list{
-	ul{
-		list-style:none;
-	}
-	font-size:1.5em;
-}
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

@@ -14,9 +14,11 @@
 	<a name="statement" class="anchor"></a>
 	<div class="content-block statement">
 		<div>
-			<p>
-				I am a programmer, designer, and creative technologist. Every day we demand more from our technology and <br> <strong>I am here to help you adapt.</strong>
-			</p>
+			<div class="col-md-12">
+				<p>
+					I am a programmer, designer, and creative technologist. Every day we demand more from our technology and <br> <strong>I am here to help you adapt.</strong>
+				</p>
+			</div>
 		</div>
 	</div>
 

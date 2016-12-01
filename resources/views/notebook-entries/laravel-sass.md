@@ -95,3 +95,44 @@ Finally, there are a few commands you need to call from the terminal, using eith
 
 If you are extending your classes with bootstrap classes, make sure the first line of app.scss is uncommented (it is commented out by default). @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+### Errors
+
+(5.3) You might run into this error when you try to run gulp watch:
+
+```
+Error: Cannot find module 'laravel-elixir'
+``` 
+
+(Question about this found [here][1])
+
+It's possible that the version of elixir in the package.json file is incorrect. Go into the packages.json file and try these values:
+
+```
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.9",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3"
+  }
+}
+
+```
+
+and then run:
+
+```
+npm install laravel-elixir-webpack-official --save-dev
+```
+
+[1]: https://laracasts.com/discuss/channels/general-discussion/cannot-find-module-vendorlaravelelixirelixir
